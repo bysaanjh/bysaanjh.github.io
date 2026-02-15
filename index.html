@@ -150,36 +150,49 @@
       Nights can feel endless, but the sunrise is waiting. Keep drawing, keep writing, keep breathing. One step is enough.</p>
     </div>
   </section>
+<!-- Write Your Story Section -->
+<section id="write">
+  <h2>Write Your Story</h2>
+  <form class="story-form" action="https://formspree.io/f/mkovryrp" method="POST">
+    <input type="text" name="name" placeholder="Your Name (optional)">
+    <input type="email" name="email" placeholder="Your Email (optional)">
+    <textarea name="message" rows="6" placeholder="Share your story here..."></textarea>
+    <button type="submit">Submit Story</button>
+  </form>
+</section>
 
-  <!-- Write Your Story Section -->
-  <section id="write">
-    <h2>Write Your Story</h2>
-    <form class="story-form">
-      <input type="text" placeholder="Your Name (optional)">
-      <input type="email" placeholder="Your Email (optional)">
-      <textarea rows="6" placeholder="Share your story here..."></textarea>
-      <button type="submit">Submit Story</button>
-    </form>
-  </section>
+<script>
+  // Remove previous JS alerts for both forms since Formspree handles submissions
+</script>
 
   <!-- Feedback Section -->
-  <section id="feedback">
-    <h2>Feedback</h2>
-    <form class="feedback-form">
-      <input type="text" placeholder="Your Name (optional)">
-      <input type="email" placeholder="Your Email (optional)">
-      <textarea rows="4" placeholder="Your Feedback"></textarea>
-      <label>Rate us:</label>
-      <select>
-        <option>⭐⭐⭐⭐⭐</option>
-        <option>⭐⭐⭐⭐</option>
-        <option>⭐⭐⭐</option>
-        <option>⭐⭐</option>
-        <option>⭐</option>
-      </select>
-      <button type="submit">Submit Feedback</button>
-    </form>
-  </section>
+<section id="feedback">
+  <h2>Feedback</h2>
+  <form class="feedback-form" action="https://formspree.io/f/mzdarorr" method="POST">
+    <input type="text" name="name" placeholder="Your Name (optional)">
+    <input type="email" name="email" placeholder="Your Email (optional)">
+    <textarea name="message" rows="4" placeholder="Your Feedback"></textarea>
+    <label>Rate us:</label>
+    <select name="rating">
+      <option>⭐⭐⭐⭐⭐</option>
+      <option>⭐⭐⭐⭐</option>
+      <option>⭐⭐⭐</option>
+      <option>⭐⭐</option>
+      <option>⭐</option>
+    </select>
+    <button type="submit">Submit Feedback</button>
+  </form>
+</section>
+
+<script>
+  // Remove the JS alert for feedback since Formspree handles submission
+  document.querySelector('.story-form').addEventListener('submit', function(e){
+    e.preventDefault();
+    alert('Thank you for sharing your story! 🌙');
+    this.reset();
+  });
+</script>
+
 
   <!-- Coming Soon Diary -->
   <section id="diary">
