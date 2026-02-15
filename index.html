@@ -1,30 +1,218 @@
-<!-- Letters Section -->
-<section id="letters">
-  <h2>Letters</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>bysaanjh</title>
+  <!-- Handwritten Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --brown: #6B4F3A;
+      --orange: #E67E22;
+      --deepblue: #1B3C59;
+      --beige: #F5F0E1;
+      --pink: #F5C6C6;
+      --white: #FFFFFF;
+    }
 
-  <div class="letter">
-    <p>Dear reader,<br>
-    It’s okay to be tired. It’s okay to pause, to breathe, to let your mind rest for a moment. Every small step you take tomorrow will matter. You are doing your best, and that is enough.</p>
-  </div>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: var(--beige);
+      color: var(--deepblue);
+    }
 
-  <div class="letter">
-    <p>Dear student at 2am,<br>
-    I know the world feels heavy and quiet, but remember — every page you write and every thought you hold is a victory. You are not alone in your silence.</p>
-  </div>
+    header {
+      background: linear-gradient(to right, var(--brown), var(--orange));
+      padding: 20px;
+      text-align: center;
+      color: var(--white);
+      font-family: 'Shadows Into Light', cursive;
+      font-size: 2.5rem;
+      letter-spacing: 2px;
+    }
 
-  <div class="letter">
-    <p>Dear dreamer,<br>
-    Nights can feel endless, but the sunrise is waiting. Keep drawing, keep writing, keep breathing. One step is enough.</p>
-  </div>
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      background-color: var(--deepblue);
+      padding: 10px 0;
+    }
 
-  <div class="letter">
-    <p>Dear overthinker,<br>
-    Your thoughts may swirl like storm clouds, but even storms pass. Each word you write calms a little piece of your mind. Let yourself feel — it’s part of the journey.</p>
-  </div>
+    nav a {
+      color: var(--white);
+      text-decoration: none;
+      font-size: 1.2rem;
+      font-family: 'Shadows Into Light', cursive;
+    }
 
-  <div class="letter">
-    <p>Dear quiet soul,<br>
-    Even if no one notices, your late-night sketches, your secret writings, your silent dreams — they matter. You are creating a world only you can see, and that world is beautiful.</p>
-  </div>
+    nav a:hover {
+      color: var(--orange);
+    }
 
-</section>
+    section {
+      padding: 50px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h2 {
+      font-family: 'Shadows Into Light', cursive;
+      color: var(--brown);
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    /* Letters */
+    .letter {
+      background-color: var(--white);
+      border-left: 5px solid var(--orange);
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      border-radius: 8px;
+    }
+
+    .letter p {
+      font-family: 'Shadows Into Light', cursive;
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    /* Feedback & Story forms */
+    form input, form textarea, form select, form button {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border-radius: 5px;
+      border: 1px solid var(--deepblue);
+      font-size: 1rem;
+    }
+
+    form button {
+      background-color: var(--orange);
+      color: var(--white);
+      border: none;
+      cursor: pointer;
+    }
+
+    form button:hover {
+      background-color: var(--brown);
+    }
+
+    /* Coming Soon Diary */
+    .coming-soon {
+      background-color: var(--pink);
+      color: var(--deepblue);
+      padding: 40px;
+      text-align: center;
+      border-radius: 10px;
+      font-size: 1.5rem;
+      margin-bottom: 40px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: var(--deepblue);
+      color: var(--white);
+      margin-top: 50px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>bysaanjh</header>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#letters">Letters</a>
+    <a href="#write">Write Your Story</a>
+    <a href="#feedback">Feedback</a>
+    <a href="#diary">Saanjh Diary</a>
+  </nav>
+
+  <!-- Letters Section -->
+  <section id="letters">
+    <h2>Letters</h2>
+
+    <div class="letter">
+      <p>Dear reader,<br>
+      It’s okay to be tired. It’s okay to pause, to breathe, to let your mind rest for a moment. Every small step you take tomorrow will matter. You are doing your best, and that is enough.</p>
+    </div>
+
+    <div class="letter">
+      <p>Dear student at 2am,<br>
+      I know the world feels heavy and quiet, but remember — every page you write and every thought you hold is a victory. You are not alone in your silence.</p>
+    </div>
+
+    <div class="letter">
+      <p>Dear dreamer,<br>
+      Nights can feel endless, but the sunrise is waiting. Keep drawing, keep writing, keep breathing. One step is enough.</p>
+    </div>
+
+    <div class="letter">
+      <p>Dear overthinker,<br>
+      Your thoughts may swirl like storm clouds, but even storms pass. Each word you write calms a little piece of your mind. Let yourself feel — it’s part of the journey.</p>
+    </div>
+
+    <div class="letter">
+      <p>Dear quiet soul,<br>
+      Even if no one notices, your late-night sketches, your secret writings, your silent dreams — they matter. You are creating a world only you can see, and that world is beautiful.</p>
+    </div>
+
+  </section>
+
+  <!-- Write Your Story Section -->
+  <section id="write">
+    <h2>Write Your Story</h2>
+    <form class="story-form">
+      <input type="text" placeholder="Your Name (optional)">
+      <input type="email" placeholder="Your Email (optional)">
+      <textarea rows="6" placeholder="Share your story here..."></textarea>
+      <button type="submit">Submit Story</button>
+    </form>
+  </section>
+
+  <!-- Feedback Section -->
+  <section id="feedback">
+    <h2>Feedback</h2>
+    <form class="feedback-form">
+      <input type="text" placeholder="Your Name (optional)">
+      <input type="email" placeholder="Your Email (optional)">
+      <textarea rows="4" placeholder="Your Feedback"></textarea>
+      <label>Rate us:</label>
+      <select>
+        <option>⭐⭐⭐⭐⭐</option>
+        <option>⭐⭐⭐⭐</option>
+        <option>⭐⭐⭐</option>
+        <option>⭐⭐</option>
+        <option>⭐</option>
+      </select>
+      <button type="submit">Submit Feedback</button>
+    </form>
+  </section>
+
+  <!-- Coming Soon Diary -->
+  <section id="diary">
+    <h2>Saanjh Diary</h2>
+    <div class="coming-soon">
+      A private digital space to write, record, and breathe.<br>
+      <strong>Coming Soon!</strong><br>
+      Join our waitlist by emailing <a href="mailto:contact@bysaanjh.com">contact@bysaanjh.com</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2026 bysaanjh. All rights reserved.
+  </footer>
+
+  <script>
+    // Feedback alert
+    document.querySelector('.feedback-form').addEventListener('submit', function(e){
+      e.preventDefault
