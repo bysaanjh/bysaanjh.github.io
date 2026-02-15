@@ -7,7 +7,6 @@
   <!-- Handwritten Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
   <style>
-    /* Colors */
     :root {
       --brown: #6B4F3A;
       --orange: #E67E22;
@@ -19,7 +18,7 @@
 
     body {
       margin: 0;
-      font-family: 'Arial', sans-serif;
+      font-family: Arial, sans-serif;
       background-color: var(--beige);
       color: var(--deepblue);
     }
@@ -66,7 +65,7 @@
       margin-bottom: 20px;
     }
 
-    /* Letters Section */
+    /* Letters */
     .letter {
       background-color: var(--white);
       border-left: 5px solid var(--orange);
@@ -82,8 +81,8 @@
       line-height: 1.6;
     }
 
-    /* Feedback Section */
-    .feedback-form input, .feedback-form textarea, .feedback-form button {
+    /* Feedback & Story forms */
+    form input, form textarea, form select, form button {
       width: 100%;
       padding: 10px;
       margin: 8px 0;
@@ -92,14 +91,14 @@
       font-size: 1rem;
     }
 
-    .feedback-form button {
+    form button {
       background-color: var(--orange);
       color: var(--white);
       border: none;
       cursor: pointer;
     }
 
-    .feedback-form button:hover {
+    form button:hover {
       background-color: var(--brown);
     }
 
@@ -111,6 +110,7 @@
       text-align: center;
       border-radius: 10px;
       font-size: 1.5rem;
+      margin-bottom: 40px;
     }
 
     footer {
@@ -131,6 +131,7 @@
   <!-- Navigation -->
   <nav>
     <a href="#letters">Letters</a>
+    <a href="#write">Write Your Story</a>
     <a href="#feedback">Feedback</a>
     <a href="#diary">Saanjh Diary</a>
   </nav>
@@ -140,7 +141,7 @@
     <h2>Letters</h2>
 
     <div class="letter">
-      <p>Dear reader<br>
+      <p>dear reader<br>
       Maybe existence itself is a function without domain, and I’m just a random point trying to find meaning.</p>
     </div>
 
@@ -148,7 +149,17 @@
       <p>Dear dreamer,<br>
       Nights can feel endless, but the sunrise is waiting. Keep drawing, keep writing, keep breathing. One step is enough.</p>
     </div>
+  </section>
 
+  <!-- Write Your Story Section -->
+  <section id="write">
+    <h2>Write Your Story</h2>
+    <form class="story-form">
+      <input type="text" placeholder="Your Name (optional)">
+      <input type="email" placeholder="Your Email (optional)">
+      <textarea rows="6" placeholder="Share your story here..."></textarea>
+      <button type="submit">Submit Story</button>
+    </form>
   </section>
 
   <!-- Feedback Section -->
@@ -166,7 +177,7 @@
         <option>⭐⭐</option>
         <option>⭐</option>
       </select>
-      <button type="submit">Submit</button>
+      <button type="submit">Submit Feedback</button>
     </form>
   </section>
 
@@ -186,10 +197,17 @@
   </footer>
 
   <script>
-    // Simple feedback submission (for demo only)
+    // Feedback alert
     document.querySelector('.feedback-form').addEventListener('submit', function(e){
       e.preventDefault();
       alert('Thank you for your feedback! 🌇');
+      this.reset();
+    });
+
+    // Story submission alert
+    document.querySelector('.story-form').addEventListener('submit', function(e){
+      e.preventDefault();
+      alert('Thank you for sharing your story! 🌙');
       this.reset();
     });
   </script>
