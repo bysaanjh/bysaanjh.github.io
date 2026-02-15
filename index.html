@@ -141,6 +141,11 @@
     <h2>Letters</h2>
 
     <div class="letter">
+      <p>Dear late-night thinker,<br>
+      The world is asleep, but your mind is awake — that’s okay. Every quiet moment you spend with your thoughts is a seed you’re planting for tomorrow. Keep breathing, keep feeling, keep believing. You are stronger than you think, and you are never truly alone.</p>
+    </div>
+
+    <div class="letter">
       <p>Dear student at 2am,<br>
       I know the world feels heavy and quiet, but remember — every page you write and every thought you hold is a victory. You are not alone in your silence.</p>
     </div>
@@ -149,6 +154,17 @@
       <p>Dear dreamer,<br>
       Nights can feel endless, but the sunrise is waiting. Keep drawing, keep writing, keep breathing. One step is enough.</p>
     </div>
+
+    <div class="letter">
+      <p>Dear overthinker,<br>
+      Your thoughts may swirl like storm clouds, but even storms pass. Each word you write calms a little piece of your mind. Let yourself feel — it’s part of the journey.</p>
+    </div>
+
+    <div class="letter">
+      <p>Dear quiet soul,<br>
+      Even if no one notices, your late-night sketches, your secret writings, your silent dreams — they matter. You are creating a world only you can see, and that world is beautiful.</p>
+    </div>
+
   </section>
 
   <!-- Write Your Story Section -->
@@ -174,4 +190,43 @@
         <option>⭐⭐⭐⭐⭐</option>
         <option>⭐⭐⭐⭐</option>
         <option>⭐⭐⭐</option>
-        <option>⭐
+        <option>⭐⭐</option>
+        <option>⭐</option>
+      </select>
+      <button type="submit">Submit Feedback</button>
+    </form>
+  </section>
+
+  <!-- Coming Soon Diary -->
+  <section id="diary">
+    <h2>Saanjh Diary</h2>
+    <div class="coming-soon">
+      A private digital space to write, record, and breathe.<br>
+      <strong>Coming Soon!</strong><br>
+      Join our waitlist by emailing <a href="mailto:contact@bysaanjh.com">contact@bysaanjh.com</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2026 bysaanjh. All rights reserved.
+  </footer>
+
+  <script>
+    // Feedback alert
+    document.querySelector('.feedback-form').addEventListener('submit', function(e){
+      e.preventDefault();
+      alert('Thank you for your feedback! 🌇');
+      this.reset();
+    });
+
+    // Story submission alert
+    document.querySelector('.story-form').addEventListener('submit', function(e){
+      e.preventDefault();
+      alert('Thank you for sharing your story! 🌙');
+      this.reset();
+    });
+  </script>
+
+</body>
+</html>
