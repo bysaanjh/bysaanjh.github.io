@@ -141,30 +141,13 @@
     <h2>Letters</h2>
 
     <div class="letter">
-      <p>Dear reader,<br>
-      It’s okay to be tired. It’s okay to pause, to breathe, to let your mind rest for a moment. Every small step you take tomorrow will matter. You are doing your best, and that is enough.</p>
-    </div>
-
-    <div class="letter">
-      <p>Dear student at 2am,<br>
-      I know the world feels heavy and quiet, but remember — every page you write and every thought you hold is a victory. You are not alone in your silence.</p>
-    </div>
+      <p>Dear reader<br>
+        Maybe existence itself is a function without domain, and I’m just a random point trying to find meaning.</div>
 
     <div class="letter">
       <p>Dear dreamer,<br>
       Nights can feel endless, but the sunrise is waiting. Keep drawing, keep writing, keep breathing. One step is enough.</p>
     </div>
-
-    <div class="letter">
-      <p>Dear overthinker,<br>
-      Your thoughts may swirl like storm clouds, but even storms pass. Each word you write calms a little piece of your mind. Let yourself feel — it’s part of the journey.</p>
-    </div>
-
-    <div class="letter">
-      <p>Dear quiet soul,<br>
-      Even if no one notices, your late-night sketches, your secret writings, your silent dreams — they matter. You are creating a world only you can see, and that world is beautiful.</p>
-    </div>
-
   </section>
 
   <!-- Write Your Story Section -->
@@ -215,4 +198,18 @@
   <script>
     // Feedback alert
     document.querySelector('.feedback-form').addEventListener('submit', function(e){
-      e.preventDefault
+      e.preventDefault();
+      alert('Thank you for your feedback! 🌇');
+      this.reset();
+    });
+
+    // Story submission alert
+    document.querySelector('.story-form').addEventListener('submit', function(e){
+      e.preventDefault();
+      alert('Thank you for sharing your story! 🌙');
+      this.reset();
+    });
+  </script>
+
+</body>
+</html>
